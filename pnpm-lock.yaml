@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@crxjs/vite-plugin': 1.0.13
+  '@crxjs/vite-plugin': 1.0.14
   '@mswjs/data': 0.11.2
   '@stitches/react': 1.2.8
   '@testing-library/jest-dom': 5.16.5
@@ -51,7 +51,7 @@ dependencies:
   zod: 3.19.1
 
 devDependencies:
-  '@crxjs/vite-plugin': 1.0.13_vite@3.2.3
+  '@crxjs/vite-plugin': 1.0.14_vite@3.2.3
   '@mswjs/data': 0.11.2_typescript@4.8.4
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
@@ -393,11 +393,11 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@crxjs/vite-plugin/1.0.13_vite@3.2.3:
-    resolution: {integrity: sha512-wfpnHycX1syoLE18XdYMYV3aTM0RGvJq2PQ81izAfaeiHIQqZsokTUdZZcKaccru0hF9nfenJfixSSMdeeLmXQ==}
+  /@crxjs/vite-plugin/1.0.14_vite@3.2.3:
+    resolution: {integrity: sha512-emOueVCqFRFmpcfT80Xsm4mfuFw9VSp5GY4eh5qeLDeiP81g0hddlobVQCo0pE2ZvNnWbyhLrXEYAaMAXjNL6A==}
     engines: {node: '>=14'}
     peerDependencies:
-      vite: '>=2.9.0'
+      vite: ^2.9.0
     dependencies:
       '@rollup/pluginutils': 4.2.1
       '@webcomponents/custom-elements': 1.5.0
@@ -409,10 +409,10 @@ packages:
       fast-glob: 3.2.12
       fs-extra: 10.1.0
       jsesc: 3.0.2
-      magic-string: 0.26.3
+      magic-string: 0.26.7
       picocolors: 1.0.0
       react-refresh: 0.13.0
-      rollup: 2.79.0
+      rollup: 2.79.1
       vite: 3.2.3
     optionalDependencies:
       '@vitejs/plugin-react': 2.2.0_vite@3.2.3
@@ -3484,13 +3484,6 @@ packages:
     hasBin: true
     dev: true
 
-  /magic-string/0.26.3:
-    resolution: {integrity: sha512-u1Po0NDyFcwdg2nzHT88wSK0+Rih0N1M+Ph1Sp08k8yvFFU3KR72wryS7e1qMPJypt99WB7fIFVCA92mQrMjrg==}
-    engines: {node: '>=12'}
-    dependencies:
-      sourcemap-codec: 1.4.8
-    dev: true
-
   /magic-string/0.26.7:
     resolution: {integrity: sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==}
     engines: {node: '>=12'}
@@ -4233,14 +4226,6 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup/2.79.0:
-    resolution: {integrity: sha512-x4KsrCgwQ7ZJPcFA/SUu6QVcYlO7uRLfLAy0DSA4NS2eG8japdbpM50ToH7z4iObodRYOJ0soneF0iaQRJ6zhA==}
-    engines: {node: '>=10.0.0'}
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
   /rollup/2.79.1:
     resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
     engines: {node: '>=10.0.0'}
@@ -4402,6 +4387,7 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    deprecated: Please use @jridgewell/sourcemap-codec instead
     dev: true
 
   /spdx-correct/3.1.1:
