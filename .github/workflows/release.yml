@@ -66,7 +66,7 @@ jobs:
           filename: ${{ steps.context.outputs.archive_basename }}.zip
 
       - name: Create release draft
-        uses: ncipollo/release-action@v1.10.0
+        uses: ncipollo/release-action@v1.15.0
         with:
           name: ${{ steps.bump_version.outputs.new_version }}
           tag: ${{ steps.bump_version.outputs.new_version }}
